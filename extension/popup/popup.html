@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Extractify</title>
+    <link rel="stylesheet" href="popup.css" />
+  </head>
+  <body>
+    <div class="container">
+      <h2>Extractify</h2>
+      <div class="status-container">
+        <div id="status" class="status">Ready to extract email</div>
+        <div id="loading" class="loading"></div>
+      </div>
+
+      <div class="result-container">
+        <input
+          type="text"
+          id="emailResult"
+          readonly
+          placeholder="Extracted email will appear here"
+        />
+        <button id="copyButton" class="button">Copy</button>
+      </div>
+
+      <button id="extractButton" class="button primary">Extract Email</button>
+
+      <div class="message-container hidden" id="messageContainer">
+        <h3>Generated Message</h3>
+        <textarea id="generatedMessage" rows="8"></textarea>
+        <button id="copyMessageButton" class="button">Copy Message</button>
+      </div>
+    </div>
+
+    <script src="popup.js"></script>
+  </body>
+</html>

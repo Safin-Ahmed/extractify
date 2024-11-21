@@ -1,0 +1,118 @@
+body {
+  width: 350px;
+  padding: 15px;
+  font-family: -appe-system, "Segoe UI", Roboto, Oxygen, Ubuntu, sans-serif;
+}
+
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: 15px;
+}
+
+h2 {
+  margin: 0;
+  color: #2557a7;
+  font-size: 18px;
+}
+
+.status-container {
+  margin: 10px 0;
+}
+
+.status {
+  padding: 8px;
+  border-radius: 4px;
+  background-color: #f0f0f0;
+  font-size: 14px;
+}
+
+.result-container {
+  display: flex;
+  gap: 8px;
+}
+
+input[type="text"] {
+  flex: 1;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 14px;
+}
+
+.button {
+  padding: 8px 16px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  font-size: 14px;
+  background-color: #f0f0f0;
+  transition: background-color 0.2s;
+}
+
+.button:hover {
+  background-color: #e0e0e0;
+}
+
+.button.primary {
+  background-color: #2557a7;
+  color: white;
+}
+
+.button.primary:hover {
+  background-color: #1e4785;
+}
+
+.message-container {
+  margin-top: 15px;
+}
+
+.message-container textarea {
+  width: 95%;
+  padding: 8px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  resize: vertical;
+  font-size: 14px;
+}
+
+.hidden {
+  display: none;
+}
+
+.status.error {
+  background-color: #ffebee;
+  color: #c62828;
+}
+
+.status.success {
+  background-color: #e8f5e9;
+  color: #2e7d32;
+}
+
+.loading.visible {
+  padding-left: 25px;
+  height: 50px;
+  background: url("../assets/spinner.gif") no-repeat center center; /* Add a spinner icon */
+  background-size: contain;
+}
+
+.message-container {
+  opacity: 0;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.message-container.visible {
+  opacity: 1;
+}
+
+#copyMessageButton {
+  margin-top: 15px;
+}
+
+.button:disabled {
+  background-color: #d6d6d6;
+  color: #8a8a8a;
+  cursor: not-allowed;
+  opacity: 0.6;
+}
