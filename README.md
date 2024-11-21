@@ -27,7 +27,7 @@ A browser extension that extracts emails from LinkedIn profiles, verifies their 
    - Open <code>chrome://extensions/</code>
    - Enable Developer mode
    - Click Load unpacked and select the extension directory
-3. Make sure the backend server is running (Required)
+3. Make sure the backend server is running (Required). For details go to the server directory of this project.
 
 <br />
 
